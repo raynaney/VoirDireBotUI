@@ -1,0 +1,179 @@
+body {
+  margin: 0px;
+  font-family: "Ubuntu", sans-serif;
+  
+}
+body::-webkit-scrollbar {
+  width: 1em;
+}
+html {
+  height: 100vh;
+}
+img {
+  padding: 20px;
+}
+.nav-bar {
+  margin: 0px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #75A6E1;
+}
+li {
+  margin: 0px 14px;
+  padding-top: 3px;
+}
+ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.2em;
+}
+a {
+  text-decoration: none;
+  color: #afcbee;
+  transition: 0.8s;
+}
+a:hover {
+  color: white;
+}
+.top-img {
+  background-color: #75A6E1;
+}
+#login-nav {
+  border-style: solid;
+  border-width: 1.5px;
+  border-radius: 12px;
+  padding: 3px 12px;
+  color: #afcbee;
+  transition: 0.8s;
+}
+
+#login-nav:hover {
+  color: white;
+}
+.top-header {
+  padding-top: 95px;
+  padding-left: 20px;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  background-color: #75A6E1;
+  display: flex;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 10px 12px 12px 0px lightgrey;
+}
+#question-mark {
+  color: #75A6E1;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 1.5px;
+  border-radius: 100%;
+  padding: 1px 3.5px;
+  font-size: 15;
+}
+.question {
+  padding: 0px;
+  margin: 0px;
+  font-size: 23px;
+}
+#login-error-msg {
+  margin-top: 0px;
+  color: red;
+  display: none;
+}
+h5 {
+  padding: 0px;
+  margin: 0px;
+  color: #596475;
+}
+hr {
+  border-top: 1px solid #F5A588;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.flexbox-outer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  flex-grow: 1;
+  height: 60vh;
+ 
+}
+#flexbox-centered{
+   align-items: center;
+}
+
+#pin-label {
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+.number {
+  height: 50px;
+  width: 40px;
+  text-align: center;
+  font-size: 2em;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 0px 5px;
+}
+.top-text {
+  display: flex;
+}
+.login-button {
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 18px;
+  padding: 9px;
+  color: white;
+  background-color: #F5A588;
+  border: transparent;
+  border-radius: 7px;
+  font-size: 22px;
+  cursor: pointer;
+}
+#help-link:hover{
+  color: #75A6E1;
+}
+
+/* footer */
+.login-footer {
+  min-height: 70px;
+  width: 100%;
+  background-color: #404669;
+  margin-top: 100px;
+  font-family: "Ubuntu", sans-serif;
+  color: #bac6ff;
+}
+.foot-text {
+  justify-content: space-evenly;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+}
+
+#hours {
+  line-height: 2;
+}
+
+.footer-text {
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 7px;
+  margin-top: 20px;
+}
+
+.bottom-text {
+  font-weight: 400;
+  font-size: 10px;
+  /*   margin-bottom: 15px; */
+}
+
+#footer-logo {
+  margin-top: 15px;
+  max-width: 130px;
+}

@@ -1,0 +1,84 @@
+<link rel="stylesheet" href="/aux-pages.css" />
+<div class="nav-bar">
+  <div class="web-title">
+    <a href="/">
+      <img
+        class="logo"
+        src="https://cdn.glitch.com/ecd6bc65-e474-424c-953d-942d04cd5377%2FBar%20Graph%20not%20as%20small.png?v=1597207574995"
+      />
+    </a>
+  </div>
+  <ul>
+    <li id="login-nav"><a href="/">Login</a></li>
+    <li><a href="/new-account">New Account</a></li>
+    <li><a href="/new-user-faq">FAQ</a></li>
+  </ul>
+</div>
+<div class="top-header">
+  <h1>Create New Account</h1>
+</div>
+<div class="flexbox-outer" id="flexbox-centered">
+  <div class="flexbox-form">
+    <div class="inner-flexbox-form">
+      <div class="top-text">
+        <p id="pin-label">
+          Enter Pin Number to Continue <span id="question-mark">?</span>
+        </p>
+      </div>
+      <div class="login-failed" id="login-failed">
+        <p id="login-error-msg">
+          Incorrect Pin
+        </p>
+      </div>
+      <form id="ios">
+        <input class="number" maxlength="1" />
+        <input class="number" maxlength="1" />
+        <input class="number" maxlength="1" />
+        <input class="number" maxlength="1" />
+        <input class="number" maxlength="1" />
+        <input class="number" maxlength="1" />
+      </form>
+
+      <button class="login-button" id="login-button">
+        Enter
+      </button>
+      <hr />
+      <p class="link">
+        <a id="help-link" href="/new-user-faq">Need Help?</a>
+      </p>
+    </div>
+  </div>
+</div>
+<footer class="login-footer">
+  <div class="foot-text">
+    <img
+      class="logo"
+      id="footer-logo"
+      src="https://cdn.glitch.com/ecd6bc65-e474-424c-953d-942d04cd5377%2FFake%20logo%20light.png?v=1594344923557"
+    />
+    <div class="footer-text">
+      About Us
+      <div class="bottom-text">
+        We are an analytics team that works tirelessly to provide you with the
+        data you need
+      </div>
+    </div>
+    <div class="footer-text">
+      Contact Us
+      <div class="bottom-text">
+        Call: <br />
+        Email:
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  const loginButton = document.getElementById("login-button");
+  const loginErrorMsg = document.getElementById("login-error-msg");
+
+  loginButton.addEventListener("click", e => {
+    console.log("clicked!");
+    e.preventDefault();
+      loginErrorMsg.style.display = "block";
+  });
+</script>

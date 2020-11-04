@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Voir Dire Chatroom</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/botui@0.3.9/build/botui.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/botui@0.3.9/build/botui-theme-default.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <!-- <div class="navBar"> -->
+        <!-- <p class="logoName">G & G research</p> -->
+      
+      <div class="flex-box">
+        <div class="instructions-container">
+          <div class="instructions">
+            <p class="text-instructions">
+              <span id = "topLabel">Instructions </span> <br /><br />
+              In this task, you will be a juror and answer questions that a
+              judge asks. <br /><br />
+              <br /><br />
+              You will be Juror 3.<br /><br />
+              <br /><br />
+            </p>
+          </div>
+        </div>
+        <div class="botui-app-container" id="help-bot">
+          <div class="connected-bar">
+            <p class = "connected-text" id="connected-text">
+               <i>Connected</i>
+               </p>
+              <p class = "connected-icon" id ="connected-icon">
+                &#x25CF
+            </p> 
+             
+           
+          </div>
+          <bot-ui></bot-ui>
+        </div>
+      </div>
+    </div>
+
+    <!-- use Vue version 2.0.5 for HTML embeds | https://github.com/botui/botui/issues/103-->
+    <!-- remove .min from the file name to use in development mode -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/botui@0.3.9/build/botui.min.js"></script>
+    <script src="./bot-script-B.js"></script>
+  </body>
+</html>
